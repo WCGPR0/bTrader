@@ -1,41 +1,31 @@
 extends layout
 
 block content
-// Navigation
-  a#menu-toggle.btn.btn-dark.btn-lg.toggle(href='#')
+    // Navigation
+    a#menu-toggle.btn.btn-dark.btn-lg.toggle(href='#')
       i.fa.fa-bars
-    |     
     nav#sidebar-wrapper
       ul.sidebar-nav
         a#menu-close.btn.btn-light.btn-lg.pull-right.toggle(href='#')
           i.fa.fa-times
-        |             
         li.sidebar-brand
           a(href='#top', onclick='$("#menu-close").click();') Start Bootstrap
-        |             
         li
           a(href='#top', onclick='$("#menu-close").click();') Home
-        |             
         li
           a(href='#about', onclick='$("#menu-close").click();') About
-        |             
         li
           a(href='#services', onclick='$("#menu-close").click();') Services
-        |             
         li
           a(href='#portfolio', onclick='$("#menu-close").click();') Portfolio
-        |             
         li
           a(href='#contact', onclick='$("#menu-close").click();') Contact
     // Header
     header#top.header
       .text-vertical-center
         h1 Start Bootstrap
-        |             
-        h3 Free Bootstrap Themes &amp; Templates
-        |             
+        h3 Free Bootstrap Themes & Templates
         br
-        |             
         a.btn.btn-dark.btn-lg(href='#about') Find Out More
     // About
     section#about.about
@@ -43,7 +33,6 @@ block content
         .row
           .col-lg-12.text-center
             h2 Stylish Portfolio is the perfect theme for your next project!
-            |                     
             p.lead
               | This theme features some wonderful photography courtesy of 
               a(target='_blank', href='http://join.deathtothestockphoto.com/') Death to the Stock Photo
@@ -57,64 +46,43 @@ block content
         .row.text-center
           .col-lg-10.col-lg-offset-1
             h2 Our Services
-            |                     
             hr.small
-            |                     
             .row
               .col-md-3.col-sm-6
                 .service-item
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
-                    |                                 
                     i.fa.fa-cloud.fa-stack-1x.text-primary
-                  |                                 
                   h4
                     strong Service Name
-                  |                                 
                   p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  |                                 
                   a.btn.btn-light(href='#') Learn More
-              |                         
               .col-md-3.col-sm-6
                 .service-item
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
-                    |                                 
                     i.fa.fa-compass.fa-stack-1x.text-primary
-                  |                                 
                   h4
                     strong Service Name
-                  |                                 
                   p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  |                                 
                   a.btn.btn-light(href='#') Learn More
-              |                         
               .col-md-3.col-sm-6
                 .service-item
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
-                    |                                 
                     i.fa.fa-flask.fa-stack-1x.text-primary
-                  |                                 
                   h4
                     strong Service Name
-                  |                                 
                   p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  |                                 
                   a.btn.btn-light(href='#') Learn More
-              |                         
               .col-md-3.col-sm-6
                 .service-item
                   span.fa-stack.fa-4x
                     i.fa.fa-circle.fa-stack-2x
-                    |                                 
                     i.fa.fa-shield.fa-stack-1x.text-primary
-                  |                                 
                   h4
                     strong Service Name
-                  |                                 
                   p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  |                                 
                   a.btn.btn-light(href='#') Learn More
             // /.row (nested)
           // /.col-lg-10
@@ -130,29 +98,24 @@ block content
         .row
           .col-lg-10.col-lg-offset-1.text-center
             h2 Our Work
-            |                     
             hr.small
-            |                     
             .row
               .col-md-6
                 .portfolio-item
                   a(href='#')
-                    img.img-portfolio.img-responsive(src='img/portfolio-1.jpg')
-              |                         
+                    img.img-portfolio.img-responsive(src='images/portfolio-1.jpg')
               .col-md-6
                 .portfolio-item
                   a(href='#')
-                    img.img-portfolio.img-responsive(src='img/portfolio-2.jpg')
-              |                         
+                    img.img-portfolio.img-responsive(src='images/portfolio-2.jpg')
               .col-md-6
                 .portfolio-item
                   a(href='#')
-                    img.img-portfolio.img-responsive(src='img/portfolio-3.jpg')
-              |                         
+                    img.img-portfolio.img-responsive(src='images/portfolio-3.jpg')
               .col-md-6
                 .portfolio-item
                   a(href='#')
-                    img.img-portfolio.img-responsive(src='img/portfolio-4.jpg')
+                    img.img-portfolio.img-responsive(src='images/portfolio-4.jpg')
             // /.row (nested)
             a.btn.btn-dark(href='#') View More Items
           // /.col-lg-10
@@ -164,16 +127,12 @@ block content
         .row
           .col-lg-12.text-center
             h3 The buttons below are impossible to resist.
-            |                     
             a.btn.btn-lg.btn-light(href='#') Click Me!
-            |                     
             a.btn.btn-lg.btn-dark(href='#') Look at Me!
     // Map
     section#contact.map
       iframe(width='100%', height='100%', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A&output=embed')
-      |         
       br
-      |         
       small
         a(href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A')
     // Footer
@@ -183,44 +142,34 @@ block content
           .col-lg-10.col-lg-offset-1.text-center
             h4
               strong Start Bootstrap
-            |                     
             p
               | 3481 Melrose Place
               br
               | Beverly Hills, CA 90210
-            |                     
             ul.list-unstyled
               li
                 i.fa.fa-phone.fa-fw
                 |  (123) 456-7890
-              |                         
               li
                 i.fa.fa-envelope-o.fa-fw
-                |   
                 a(href='mailto:name@example.com') name@example.com
-            |                     
             br
-            |                     
             ul.list-inline
               li
                 a(href='#')
                   i.fa.fa-facebook.fa-fw.fa-3x
-              |                         
               li
                 a(href='#')
                   i.fa.fa-twitter.fa-fw.fa-3x
-              |                         
               li
                 a(href='#')
                   i.fa.fa-dribbble.fa-fw.fa-3x
-            |                     
             hr.small
-            |                     
-            p.text-muted Copyright &copy; Your Website 2014
+            p.text-muted Copyright © Your Website 2014
     // jQuery
-    script(src='js/jquery.js')
+    script(src='javascripts/jquery.js')
     // Bootstrap Core JavaScript
-    script(src='js/bootstrap.min.js')
+    script(src='javascripts/bootstrap.min.js')
     // Custom Theme JavaScript
     script.
       // Closes the sidebar menu
